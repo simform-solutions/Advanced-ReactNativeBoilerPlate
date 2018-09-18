@@ -98,7 +98,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.reactnativeboilerplate"
+        applicationId "com.simform.reactnativeboilerplate"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
