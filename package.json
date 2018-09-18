@@ -18,9 +18,6 @@
     "android:logcat": "$ANDROID_HOME/platform-tools/adb logcat *:S ReactNative:V ReactNativeJS:V",
     "android:shake": "$ANDROID_HOME/platform-tools/adb devices | grep '\\t' | awk '{print $1}' | sed 's/\\s//g' | xargs -I {} $ANDROID_HOME/platform-tools/adb -s {} shell input keyevent 82",
     "storybook": "storybook start -p 7007",
-    "lint": "standard --verbose | snazzy",
-    "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
-    "fixcode": "standard --fix",
     "git-hook": "npm run lint -s && npm run test -s"
   },
   "dependencies": {
@@ -71,9 +68,7 @@
     "react-test-renderer": "16.3.1",
     "reactotron-react-native": "^2.0.0-alpha.3",
     "reactotron-redux": "^2.0.0-alpha.3",
-    "reactotron-redux-saga": "^2.0.0-alpha.3",
-    "snazzy": "^8.0.0",
-    "standard": "10.0.2"
+    "reactotron-redux-saga": "^2.0.0-alpha.3"
   },
   "jest": {
     "testMatch": [
