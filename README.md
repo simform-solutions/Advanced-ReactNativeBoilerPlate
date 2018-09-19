@@ -1,7 +1,9 @@
-#  ReactNativeBoilerPlate
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+#  React-Native Boiler Plate
 
-* Standard compliant React Native App Utilizing [Ignite](https://github.com/infinitered/ignite)
+[![js-eslint-style](https://img.shields.io/badge/lint%20compliance-eslint-brightgreen.svg?style=flat)](http://eslint.org/) [![js-airbnb-style](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=flat)](https://github.com/airbnb/javascript/)
+
+* Extension of the [ignite react-native boiler plate](https://github.com/infinitered/ignite-ir-boilerplate-andross) using eslint and airbnb javascript compliant React Native App utilizing [Ignite](https://github.com/infinitered/ignite)
+* We have used redux-persist along with redux-saga.
 
 ## :arrow_up: How to Setup
 
@@ -9,7 +11,9 @@
 
 **Step 2:** cd to the cloned repo:
 
-**Step 3:** Install the Application with `yarn` or `npm i`
+**Step 3:** Rename the project bundle id and package name:([react-native-rename](https://github.com/junedomingo/react-native-rename) is useful module sin this step)
+
+**Step 4:** Install the Application with `npm i`
 
 
 ## :arrow_forward: How to Run App
@@ -17,27 +21,34 @@
 1. cd to the repo
 2. Run Build for either OS
   * for iOS
+    * run `npm run ios`
+  * for Android
+    * run `npm run android`
+
+## :no_entry_sign: Eslint and Airbnb javascript Compliant
+
+This project adheres to Airbnb style guide. We have setup and enabled eslint for this project. We suggest that you keep following it.
+
+**To Lint**
+
+This is implemented using [eslint](https://eslint.org). Just run `npm run lint`
+
+**To Fix Lint Errors**
+
+run `npm run fixcode`
+
+**Bypass Lint And Run Project**
+
+If you have to bypass lint and just run the project for special case.
+  * for iOS
     * run `react-native run-ios`
   * for Android
-    * Run Genymotion
     * run `react-native run-android`
-
-## :no_entry_sign: Standard Compliant
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-This project adheres to Standard.  Our CI enforces this, so we suggest you enable linting to keep your project compliant during development.
-
-**To Lint on Commit**
-
-This is implemented using [husky](https://github.com/typicode/husky). There is no additional setup needed.
-
-**Bypass Lint**
-
-If you have to bypass lint for a special commit that you will come back and clean (pushing something to a branch etc.) then you can bypass git hooks with adding `--no-verify` to your commit command.
 
 **Understanding Linting Errors**
 
-The linting rules are from JS Standard and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react).
+The linting rules are from airbnb and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react). [Airbnb errors can be found here.](https://github.com/airbnb/javascript)
+We have customised the linting as per our requirements. You can check the .eslintrc of the project and modify it as per your requirements.
 
 ## :closed_lock_with_key: Secrets
 
