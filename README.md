@@ -24,8 +24,9 @@
     * run `npm run ios`
   * for Android
     * run `npm run android`
+    * Use the sdk versions for any third party library you add as mentioned in Project/android/app/build.gradle. Since google forces to use target sdk 26 or onwards.
 
-## :no_entry_sign: Eslint and Airbnb javascript Compliant
+## :heavy_exclamation_mark: Eslint and Airbnb javascript Compliant :heavy_exclamation_mark:
 
 This project adheres to Airbnb style guide. We have setup and enabled eslint for this project. We suggest that you keep following it.
 
