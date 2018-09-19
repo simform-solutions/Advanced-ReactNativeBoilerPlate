@@ -20,7 +20,9 @@
     "storybook": "storybook start -p 7007",
     "git-hook": "npm run lint -s && npm run test -s",
     "lint": "eslint ./App",
-    "fix-lint": "eslint --fix ./App"
+    "fixcode": "eslint --fix ./App",
+    "ios": "npm run lint && react-native run-ios",
+    "android": "npm run lint && react-native run-android"
   },
   "dependencies": {
     "apisauce": "^0.14.2",
