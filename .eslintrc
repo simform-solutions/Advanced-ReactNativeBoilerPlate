@@ -6,12 +6,10 @@
     "parser": "babel-eslint",
     "extends": "airbnb",
     "rules": {
-      "react/prop-types": 0,
       "class-methods-use-this": 0,
       "global-require": 0,
       "prefer-stateless-function": 0,
-      "import/prefer-default-export": "off",
-      "react/prefer-stateless-function": "off",
+      "import/prefer-default-export": "on",
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "no-console": [1, { "allow": ["warn", "error", "tron", "disableYellowBox"] }],
       "import/no-extraneous-dependencies": ["error",
@@ -19,7 +17,8 @@
           "devDependencies": ["**/*.story.js"] 
         }
       ],
-      "react/forbid-prop-types": 0,
+      "react/forbid-prop-types": [1, {"forbid": "any"}],
+      "react/prop-types": [0, ["Containers/*.js"]]
     },
     "globals": {
       "__BUNDLE_START_TIME__": false,

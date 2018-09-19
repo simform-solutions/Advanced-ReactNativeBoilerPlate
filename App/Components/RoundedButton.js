@@ -3,20 +3,6 @@ import PropTypes from 'prop-types';
 import { TouchableOpacity, Text } from 'react-native';
 import styles from './Styles/RoundedButtonStyles';
 
-// Note that this file (App/Components/RoundedButton) needs to be
-// imported in your app somewhere, otherwise your component won't be
-// compiled and added to the examples dev screen.
-const propTypes = {
-  onPress: PropTypes.func,
-  text: PropTypes.string,
-  children: PropTypes.string,
-};
-
-const defaultProps = {
-  onPress: () => {},
-  text: '',
-  children: {},
-};
 export default class RoundedButton extends Component {
   getText() {
     const { text, children } = this.props;
@@ -33,5 +19,12 @@ export default class RoundedButton extends Component {
     );
   }
 }
-RoundedButton.propTypes = propTypes;
-RoundedButton.defaultProps = defaultProps;
+RoundedButton.propTypes = {
+  onPress: PropTypes.func,
+  text: PropTypes.string.isRequired,
+  children: PropTypes.object,
+};
+RoundedButton.defaultProps = {
+  onPress: () => {},
+  children: {},
+};

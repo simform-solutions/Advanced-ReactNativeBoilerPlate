@@ -1,37 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 import styles from './Styles/AlertMessageStyles';
 
-const defaultProps = {
-  show: true,
-  title: '',
-  style: {},
-};
-
-const propTypes = {
-  title: PropTypes.string,
-  style: PropTypes.object,
-  show: PropTypes.bool,
-}
-export default class AlertMessage extends Component {
-  render() {
-    const messageComponent = null;
-    if (this.props.show) {
-      const { title } = this.props;
-      return (
-        <View
-          style={[styles.container, this.props.style]}
-        >
-          <View style={styles.contentContainer}>
-            <Text allowFontScaling={false} style={styles.message}>{title && title.toUpperCase()}</Text>
-          </View>
+const AlertMessage = (props) => {
+  const { title, show, style } = props;
+  if (show) {
+    return (
+      <View
+        style={[styles.container, style]}
+      >
+        <View style={styles.contentContainer}>
+          <Text
+            allowFontScaling={false}
+            style={styles.message}
+          >
+            {title && title.toUpperCase()}
+          </Text>
         </View>
-      );
-    }
-
-    return messageComponent;
+      </View>
+    );
   }
-}
-AlertMessage.defaultProps = defaultProps;
-AlertMessage.propTypes = propTypes;
+  return null;
+};
+export default AlertMessage;
+AlertMessage.defaultProps = {
+  style: styles.container,
+};
+AlertMessage.propTypes = {
+  title: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  show: PropTypes.bool.isRequired,
+};
