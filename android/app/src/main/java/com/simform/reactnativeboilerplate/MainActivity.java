@@ -1,4 +1,4 @@
-package com.reactnativeboilerplate;
+package com.simform.reactnativeboilerplate;
 
 import com.facebook.react.ReactActivity;
 

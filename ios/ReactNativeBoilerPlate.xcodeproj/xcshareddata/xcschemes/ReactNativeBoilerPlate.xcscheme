@@ -7,7 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForReactNativeBoilerPlateing = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -21,7 +21,7 @@
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForReactNativeBoilerPlateing = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -35,7 +35,7 @@
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "YES"
+            buildForReactNativeBoilerPlateing = "YES"
             buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
@@ -43,30 +43,30 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ReactNativeBoilerPlateTests.xctest"
-               BlueprintName = "ReactNativeBoilerPlateTests"
+               BuildableName = "ReactNativeBoilerPlateReactNativeBoilerPlates.xctest"
+               BlueprintName = "ReactNativeBoilerPlateReactNativeBoilerPlates"
                ReferencedContainer = "container:ReactNativeBoilerPlate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
-   <TestAction
+   <ReactNativeBoilerPlateAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
+      <ReactNativeBoilerPlateables>
+         <ReactNativeBoilerPlateableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ReactNativeBoilerPlateTests.xctest"
-               BlueprintName = "ReactNativeBoilerPlateTests"
+               BuildableName = "ReactNativeBoilerPlateReactNativeBoilerPlates.xctest"
+               BlueprintName = "ReactNativeBoilerPlateReactNativeBoilerPlates"
                ReferencedContainer = "container:ReactNativeBoilerPlate.xcodeproj">
             </BuildableReference>
-         </TestableReference>
-      </Testables>
+         </ReactNativeBoilerPlateableReference>
+      </ReactNativeBoilerPlateables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -78,7 +78,7 @@
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
-   </TestAction>
+   </ReactNativeBoilerPlateAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"

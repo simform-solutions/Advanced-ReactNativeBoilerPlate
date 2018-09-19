@@ -1,0 +1,71 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "rules": {
+      "class-methods-use-this": 0,
+      "global-require": 0,
+      "prefer-stateless-function": 0,
+      "import/prefer-default-export": "on",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "no-console": [1, { "allow": ["warn", "error", "tron", "disableYellowBox"] }],
+      "import/no-extraneous-dependencies": ["error",
+        {
+          "devDependencies": ["**/*.story.js"] 
+        }
+      ],
+      "react/forbid-prop-types": [1, {"forbid": "any"}],
+      "react/prop-types": [0, ["Containers/*.js"]]
+    },
+    "globals": {
+      "__BUNDLE_START_TIME__": false,
+      "__DEV__": true,
+      "__dirname": false,
+      "__filename": false,
+      "__fbBatchedBridgeConfig": false,
+      "alert": false,
+      "cancelAnimationFrame": false,
+      "clearImmediate": true,
+      "clearInterval": false,
+      "clearTimeout": false,
+      "console": false,
+      "document": false,
+      "escape": false,
+      "exports": false,
+      "global": false,
+      "jest": false,
+      "pit": false,
+      "Map": true,
+      "module": false,
+      "navigator": false,
+      "process": false,
+      "Promise": false,
+      "requestAnimationFrame": true,
+      "require": false,
+      "Set": true,
+      "setImmediate": true,
+      "setInterval": false,
+      "setTimeout": false,
+      "window": false,
+      "FormData": true,
+      "XMLHttpRequest": false,
+  
+      "ReactElement": false,
+      "ReactClass": false,
+      "Class": false,
+  
+      "expect": true,
+      "mock": true,
+      "sandbox": true,
+      "sinon": true,
+      "spy": true,
+      "stub": true,
+      "useFakeServer": true,
+      "useFakeTimers": true,
+      "useFakeXMLHttpRequest": true
+    }
+  }
+  
