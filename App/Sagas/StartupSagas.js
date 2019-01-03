@@ -1,12 +1,12 @@
 import { put, select } from 'redux-saga/effects';
-import { is } from 'ramda';
 import GithubActions, { GithubSelectors } from '../Redux/GithubRedux';
+import { is } from 'ramda';
 
 // exported to make available for tests
-export const { selectAvatar } = GithubSelectors;
+export const selectAvatar = GithubSelectors.selectAvatar;
 
 // process STARTUP actions
-export function* startup() {
+export function * startup () {
   if (__DEV__ && console.tron) {
     // straight-up string logging
     console.tron.log('Hello, I\'m an example of how to log via Reactotron.');
@@ -14,7 +14,7 @@ export function* startup() {
     // logging an object for better clarity
     console.tron.log({
       message: 'pass objects for better logging',
-      someGeneratorFunction: selectAvatar,
+      someGeneratorFunction: selectAvatar
     });
 
     // fully customized!
@@ -28,8 +28,8 @@ export function* startup() {
         subObject,
         someInlineFunction: () => true,
         someGeneratorFunction: startup,
-        someNormalFunction: selectAvatar,
-      },
+        someNormalFunction: selectAvatar
+      }
     });
   }
   const avatar = yield select(selectAvatar);
