@@ -1,12 +1,11 @@
+import ReduxPersist from '../Config/ReduxPersist';
 import { AsyncStorage } from 'react-native';
 import { persistStore } from 'redux-persist';
-import ReduxPersist from '../Config/ReduxPersist';
 import StartupActions from '../Redux/StartupRedux';
 import DebugConfig from '../Config/DebugConfig';
 
 const updateReducers = (store: Object) => {
-  // const reducerVersion = ReduxPersist.reducerVersion;
-  const { reducerVersion } = ReduxPersist;
+  const reducerVersion = ReduxPersist.reducerVersion;
   const startup = () => store.dispatch(StartupActions.startup());
 
   // Check to ensure latest reducer version
@@ -17,10 +16,10 @@ const updateReducers = (store: Object) => {
           name: 'PURGE',
           value: {
             'Old Version:': localVersion,
-            'New Version:': reducerVersion,
+            'New Version:': reducerVersion
           },
           preview: 'Reducer Version Change Detected',
-          important: true,
+          important: true
         });
       }
       // Purge store

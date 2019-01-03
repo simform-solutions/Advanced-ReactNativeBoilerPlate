@@ -1,9 +1,21 @@
 #  React-Native Boiler Plate
 
-[![js-eslint-style](https://img.shields.io/badge/lint%20compliance-eslint-brightgreen.svg?style=flat)](http://eslint.org/) [![js-airbnb-style](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=flat)](https://github.com/airbnb/javascript/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.57.8-blue.svg)](https://facebook.github.io/react-native/)
+[![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.0.9-blue.svg)](https://reactnavigation.org/)
+[![js-eslint-style](https://img.shields.io/badge/lint%20compliance-eslint:recommended-brightgreen.svg?style=flat)](http://eslint.org/)
 
-* Extension of the [ignite react-native boiler plate](https://github.com/infinitered/ignite-ir-boilerplate-andross) using eslint and airbnb javascript compliant React Native App utilizing [Ignite](https://github.com/infinitered/ignite)
-* We have used redux-persist along with redux-saga.
+* Extension of the [ignite react-native boiler plate](https://github.com/infinitered/ignite-ir-boilerplate-andross) using eslint-recommended compliant React Native App which utilizes [Ignite](https://github.com/infinitered/ignite)
+
+* This is an advanced boilerplate which uses react-native, redux-saga, redux-persist. It will be a very useful to kickstart your project if you are using these frameworks/librarirs. Or want to have some strict linting style.
+
+* We have used [react-native-extended-stylesheet](https://github.com/vitalets/react-native-extended-stylesheet) in this project. Since every mobile application should be responsive even if we don't use flex-layout for all the styling in the application. Instead of using the StyleSheet provided by react-native, we recommend using the stylesheet provided by this library.
+
+## Removed modules/libraries from the original [ignite react-native boiler plate](https://github.com/infinitered/ignite-ir-boilerplate-andross)
+
+  * storybook
+  * standard and snazzy linting guides
+  * [react-native-i18](https://github.com/AlexanderZaytsev/react-native-i18n)
+
 
 ## :arrow_up: How to Setup
 
@@ -11,7 +23,7 @@
 
 **Step 2:** cd to the cloned repo:
 
-**Step 3:** Rename the project bundle id and package name:([react-native-rename](https://github.com/junedomingo/react-native-rename) is useful module sin this step)
+**Step 3:** Rename the project bundleId, package name and application name.
 
 **Step 4:** Install the Application with `npm i`
 
@@ -26,9 +38,9 @@
     * run `npm run android`
     * Use the sdk versions for any third party library you add as mentioned in Project/android/app/build.gradle. Since google forces to use target sdk 26 or onwards.
 
-## :heavy_exclamation_mark: Eslint and Airbnb javascript Compliant :heavy_exclamation_mark:
+## <div style="display: flex;align-items: center;"><img src="https://eslint.org/img/logo.svg" width="35" title="eslint" style="vertical-align: middle;"> Eslint Compliant</div>
 
-This project adheres to Airbnb style guide. We have setup and enabled eslint for this project. We suggest that you keep following it.
+This project adheres to "eslint:recommended" style guide. We have setup and enabled eslint for this project. We suggest that you keep following it.
 
 **To Lint**
 
