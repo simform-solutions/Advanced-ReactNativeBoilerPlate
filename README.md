@@ -4,9 +4,9 @@
 [![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.0.9-blue.svg)](https://reactnavigation.org/)
 [![js-eslint-style](https://img.shields.io/badge/lint%20compliance-eslint:recommended-brightgreen.svg?style=flat)](http://eslint.org/)
 
-* Extension of the [ignite react-native boiler plate](https://github.com/infinitered/ignite-ir-boilerplate-andross) using eslint-recommended compliant React Native App which utilizes [Ignite](https://github.com/infinitered/ignite)
+* This is an extension of the [ignite react-native boiler plate](https://github.com/infinitered/ignite-ir-boilerplate-andross). It uses eslint-recommended and utilizes [Ignite](https://github.com/infinitered/ignite)
 
-* This is an advanced boilerplate which uses react-native, redux-saga, redux-persist. It will be a very useful to kickstart your project if you are using these frameworks/librarirs. Or want to have some strict linting style.
+* This is an advanced boilerplate which uses react-native, redux-saga, redux-persist, apisauce. It will be a very useful to kickstart your project if you are using these frameworks/librarirs. Or want to have some strict linting style.
 
 * We have used [react-native-extended-stylesheet](https://github.com/vitalets/react-native-extended-stylesheet) in this project. Since every mobile application should be responsive even if we don't use flex-layout for all the styling in the application. Instead of using the StyleSheet provided by react-native, we recommend using the stylesheet provided by this library.
 
