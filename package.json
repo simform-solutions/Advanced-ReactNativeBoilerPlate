@@ -23,6 +23,17 @@
     "ios": "npm run lint && react-native run-ios",
     "android": "npm run lint && react-native run-android"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "App/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "apisauce": "^0.14.2",
     "format-json": "^1.0.3",
@@ -57,16 +68,18 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "eslint": "^5.11.1",
-    "eslint-plugin-react": "^7.12.2",
-    "eslint-plugin-react-native": "^3.5.0",
     "eslint-plugin-eslint-comments": "^3.0.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.2",
+    "eslint-plugin-react-native": "^3.5.0",
+    "husky": "^1.3.1",
     "ignite-animatable": "^1.0.2",
     "ignite-ir-boilerplate-andross": "^2.4.1",
     "ignite-redux-persist": "^1.1.2",
     "ignite-standard": "^1.0.0",
     "ignite-vector-icons": "^1.1.1",
     "jest": "23.6.0",
+    "lint-staged": "^8.1.3",
     "metro-react-native-babel-preset": "0.51.1",
     "mockery": "^2.1.0",
     "react-dom": ">=16.3.3",
