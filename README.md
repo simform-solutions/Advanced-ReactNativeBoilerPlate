@@ -40,7 +40,7 @@
 
 ## <div style="display: flex;align-items: center;"><img src="https://eslint.org/img/logo.svg" width="35" title="eslint" style="vertical-align: middle;"> Eslint Compliant</div>
 
-This project adheres to "eslint:recommended" style guide. We have setup and enabled eslint for this project. We suggest that you keep following it.
+This project adheres to "eslint:recommended" style guide. We have setup and enabled eslint for this project. We suggest that you keep following it. There are pre-commit hooks implemented to prevent bad commits. So if you don't lint your code before commiting it, you won't be able to commit it.
 
 **To Lint**
 
