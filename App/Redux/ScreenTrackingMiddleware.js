@@ -13,14 +13,7 @@ const getCurrentRouteName = (navigationState) => {
   return route.routeName;
 };
 
-const screenTracking = ({ getState }) => next => (action) => {
-  if (
-    action.type !== NavigationActions.NAVIGATE &&
-    action.type !== NavigationActions.BACK
-  ) {
-    return next(action);
-  }
-
+const trackCurrentScreen = (getState, next, action) => {
   const currentScreen = getCurrentRouteName(getState().nav);
   const result = next(action);
   const nextScreen = getCurrentRouteName(getState().nav);
@@ -32,6 +25,17 @@ const screenTracking = ({ getState }) => next => (action) => {
       console.tron.log(e);
     }
   }
+  return result;
+};
+
+const screenTracking = ({ getState }) => next => (action) => {
+  if (
+    action.type !== NavigationActions.NAVIGATE &&
+    action.type !== NavigationActions.BACK
+  ) {
+    return next(action);
+  }
+  const result = trackCurrentScreen(getState, next, action);
   return result;
 };
 
