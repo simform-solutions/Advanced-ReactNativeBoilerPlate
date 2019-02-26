@@ -16,9 +16,11 @@ module.exports = {
       "sourceType": "module"
     },
     "plugins": [
-      "react"
+      "react",
+      "react-native"
     ],
     "rules": {
+      // general
       "indent": ["error", 2],
       "linebreak-style": ["error", "unix"],
       "quotes": ["error", "single"],
@@ -40,6 +42,9 @@ module.exports = {
               "message": "Unexpected property on console object was called"
           }
       ],
+      "complexity": ["error", { "max": 4 }],
+      "eqeqeq": ["error", "always"],
+      // react
       "react/no-unescaped-entities": ["error", {"forbid": ['>', '"', '}']}],
       "react/prop-types": [2, {"ignore": ['action', 'dispatch', 'nav', 'navigation']}],
       "react/display-name": 2,
@@ -51,7 +56,13 @@ module.exports = {
         "shorthandFirst": true,
         "ignoreCase": true,
         "noSortAlphabetically": true,
-      }]
+      }],
+      "react/jsx-pascal-case": 2,
+      // react-native specific rules
+      "react-native/no-unused-styles": 2,
+      "react-native/no-inline-styles": 2,
+      "react-native/no-color-literals": 2,
+      "react-native/no-raw-text": 2
     },
     // Map from global var to bool specifying if it can be redefined
     "globals": {
