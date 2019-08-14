@@ -1,6 +1,6 @@
 #  Advanced React-Native Boiler Plate
 
-## This boiler-plate is under maintainance. We are working on to find out a worthy replacement of reduxsauce.
+## This boiler-plate is under maintainance. We are working on to find out a worthy replacement of [reduxsauce](https://github.com/infinitered/reduxsauce).
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.59.8-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.0.9-blue.svg)](https://reactnavigation.org/)
