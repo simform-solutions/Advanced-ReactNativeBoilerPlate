@@ -1,8 +1,6 @@
 # **We are no longer using this as we hae developed another one which has several amazing features. Check it out [SimformRN](https://github.com/simformsolutions/react-native-boilerplate-latest)**
 
-#  Advanced React-Native Boiler Plate
-
-## This boiler-plate is under maintenance. We are working on to find out a worthy replacement of [reduxsauce](https://github.com/infinitered/reduxsauce), updating react-native, replacing react-native-i18n by react-native-localize and also adding some interesting concepts.
+##  Advanced React-Native Boiler Plate
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.59.8-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V3](https://img.shields.io/badge/React%20Navigation-v3.0.9-blue.svg)](https://reactnavigation.org/)
