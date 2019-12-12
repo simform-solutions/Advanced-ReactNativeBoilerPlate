@@ -1,4 +1,4 @@
-# **We are no longer using this as we hae developed another one which has several amazing features. Check it out [SimformRN](https://github.com/simformsolutions/react-native-boilerplate-latest)**
+# **We are no longer using this as we have developed another boilerplate which has several amazing features. Check it out [SimformRN](https://github.com/simformsolutions/react-native-boilerplate-latest)**
 
 ##  Advanced React-Native Boiler Plate
 
@@ -40,7 +40,7 @@
     * run `npm run android`
     * Use the sdk versions for any third party library you add as mentioned in Project/android/app/build.gradle. Since google forces to use target sdk 26 or onwards.
 
-## <div style="display: flex;align-items: center;"><img src="https://eslint.org/img/logo.svg" width="35" title="eslint" style="vertical-align: middle;"> Eslint Compliant</div>
+## Eslint Compliant
 
 This project adheres to "eslint:recommended" style guide. We have setup and enabled eslint for this project. We suggest that you keep following it. There are pre-commit hooks implemented to prevent bad commits. So if you don't lint your code before commititng it, you won't be able to commit it.
 
